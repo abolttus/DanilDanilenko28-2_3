@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <map name="rect">
+        <area shape="rect" coords="66,43,441,224" href="https://www.kubsu.ru/" alt="Сайт КубГу">
+        <area shape="rect" coords="144,293,515,462" href="https://www.kubsu.ru/" alt="Сайт КубГу">
+        <area shape="circle" coords="770, 216, 120" href="https://www.kubsu.ru/" alt="Сайт КубГу">
+    </map>
+    <hl> Маркированный список ссылок <hl>
+    <ul>
+        <li><a href="http://www.kubsu.ru" target="_blank">КубГу</a></li>
+        <li><a href="https://www.kubsu.ru" target="_blank">Главная страница КубГу</a></li>
+        <li><a href="https://www.kubsu.ru" target="_blank"><img src="html/index2.html/image/е.jpg" alt="Картинка"></a><li></li>
+        <li><a href="/inside/inside.html">Ссылка на внутреннюю страницу</a></li>
+        <li><a href="index.html?p1=1&p2=2&p3=3">Ссылка с тремя параметрами</a></li>
+        <li><a href="index.html?id=1234"> Ссылка с параметром id</a></li>
+        <li><a href="/index.html">Сокращенная ссылка на главную страницу</a></li>
+        <li><a href="/#rect"> Ссылка на фрагмент страницы</a></li>
+        <li><a href="/this.html">Ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/about.html">Ссылка на страницу в каталоге about</a></li>
+        <li><a href="../">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../">Относительная ссылка на страницу в каталоге на два уровня выше текущего</a></li>
+        <li><a href="https://moodle.kubsu.ru/mod/assign/view.php?id=16911">Ссылка на фрагмент стороннего сайта</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li>Ссылка без href</a></li>
+        <li><img src="/Безымянный.png" usemap="#rect"></li>
+        <noindex><li><a href=""> Ссылка, запрещенная для индексации</a></li></noindex>
+        <li><a href="#" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a href= "ftp://jess12:bosox67@ftp.xyz.com">ftp ссылка</a><li></li>
+        <li id="last_one"><a href=""></a></li>
+    </ul>
+    <ol>
+        <h1> Пронумерованный список ссылок</h1>
+        <li><a href="#" title="1"> Первая</a></li>
+        <li><a href="#" title="2"> Вторая</a></li>
+        <li><a href="#" title="3"> Третья</a></li>
+        <li><a href="#" title="4"> Четвертая</a></li>
+        <li><a href="#" title="5"> Пятая</a></li>
+        <li><a href="#" title="6"> Шестая</a></li>
+        <li><a href="#" title="7"> Седьмая</a></li>
+        <li><a href="#" title="8"> Восьмая</a></li>
+        <li><a href="#" title="9"> Девятая</a></li>
+        <li><a href="#" title="10"> Десятая</a></li>
+    </ol>
+    <h1>Форма HTML<h1>
+    <form action="/"
+    method="POST">
+    <label>
+        ФИО:<br />
+        <input name="field-name-1" value="Начальное значение" />
+    </label><br />
+    <label></label>
+        email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+    </label>
+    Номер телефона:<br />
+    <input name="field-tel"
+      type="tel"
+      placeholder="Введите номер телефона" />
+  </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2">начальное значение</textarea>
+      </label><br />
+
+      <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label><br />
+
+      Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="value1" /> Мужчина</label>
+      <label><input type="radio"
+        name="radio-group-1" value="value2" />Женщина</label><br />
+
+      <br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" /> С контрактом ознакомлен</label><br />
+
+      Кнопка отправки формы:
+      <input type="submit" value="Отправить" />
+    </form>
+
+</body>
+</html>
